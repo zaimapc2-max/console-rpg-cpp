@@ -3,7 +3,7 @@
 Mage::Mage(string na):Character(na){
     hp = maxHp= 50;
     mana = maxMana = 100;
-    spellPower = 50;
+    spellPower = 20;
 }
 
 void Mage::displayStats(){
@@ -24,6 +24,7 @@ void Mage::fireball(Character& target){
     int damage = spellPower*2;
     cout<<"Mage "<<name<<" uses FireBall on "<<target.getname()<<endl;
     target.takeDamage(damage);
+    cout << target.getname() << " loses " << damage << " health points" << endl;
 }
 
 
@@ -38,4 +39,13 @@ void Mage::freezeball(Character& target){
     int damage = spellPower+5;
     cout<<"Mage "<<name<<" uses FreezeBall on "<<target.getname()<<endl;
     target.takeDamage(damage);
+    cout << target.getname() << " loses " << damage << " health points" << endl;
+}
+
+void Mage::attack(Character& target){
+   cout<< name + " attacks " + target.getname()<<endl;
+   cout<<"Attack Power: "<<atkStat<<endl;
+   target.takeDamage(atkStat);
+   cout<<target.getname() +" loses "<<atkStat<<" health points"<<endl;
+
 }
