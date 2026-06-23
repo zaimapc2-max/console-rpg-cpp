@@ -6,7 +6,7 @@ class Mage : public Character{
     protected: 
         int spellPower;
     public:
-        Mage();
+        Mage(string na);
         void attack(Character& targer) override;
         void displayStats() override;
         void fireball(Character& target);

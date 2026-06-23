@@ -1,6 +1,7 @@
 #ifndef ENEMY_H
 #define ENEMY_H
-#include "Character.h"
+#include "../Character/Character.h"
+#include <string>
 using namespace std;
 
 class Enemy:public Character{
@@ -15,8 +16,6 @@ class Enemy:public Character{
         virtual ~Enemy();
 
 };
-
-
 
 
 #endif

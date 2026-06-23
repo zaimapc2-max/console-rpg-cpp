@@ -43,5 +43,6 @@ int Character::getatkStat(){return atkStat;}
 int Character::getdefence(){return defence;}
 int Character::getlevel(){return level;}
 int Character::getxp(){return xp;}
+string Character::getname(){return name;}
 
 Character::~Character(){}

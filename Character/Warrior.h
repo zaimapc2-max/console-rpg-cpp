@@ -8,7 +8,7 @@ class Warrior : public Character{
             int rage;
     public:
         Warrior(string na);
-        void attack() override;
+        void attack(Character& target) override;
         void displayStats() override;
         void takeDamage(int dmg) override;
         void shieldBash(Character& target);

@@ -27,10 +27,13 @@ void Warrior::attack(Character& target){
 }
 
 void Warrior::shieldBash(Character& target){
-
     int damage = atkStat * 2;
     if(rage>=10){
         rage -= 10;
+    }
+    else{
+        cout<<"----Cannot Use Sheild Bash Attack----"<<endl;
+        return;
     }
     cout<<"Warrior "<<name<<" uses special moves on "<<target.getname()<<endl;
     target.takeDamage(damage);
