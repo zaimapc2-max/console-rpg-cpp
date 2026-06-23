@@ -4,8 +4,10 @@
 #include <string>
 
 class Dragon : public Enemy{
+    protected:
+    bool usedFire;
     public:
-        Dragon(string n);
+        Dragon(string n,int xr,string ld);
         void attack(Character& target) override;
         void fireBreath(Character& target);
         bool isEnraged();

@@ -14,7 +14,7 @@ bool Dragon::isEnraged(){
 }
 
 void Dragon::attack(Character& target){
-    cout<< name + " attacks " + target.getname()<<endl;
+    cout<<"Dragon "+ name + " attacks " + target.getname()<<endl;
     int damage = atkStat;
     if(isEnraged()){
         cout<<"Dragon is Enraged!!"<<endl;

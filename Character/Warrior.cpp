@@ -35,7 +35,7 @@ void Warrior::shieldBash(Character& target){
         cout<<"----Cannot Use Sheild Bash Attack----"<<endl;
         return;
     }
-    cout<<"Warrior "<<name<<" uses special moves on "<<target.getname()<<endl;
+    cout<<"Warrior "<<name<<" uses Sheild Bash on "<<target.getname()<<endl;
     target.takeDamage(damage);
     cout<<target.getname() +" loses "<<damage<<" health points"<<endl;
 }
