@@ -8,6 +8,7 @@ class Goblin : public Enemy{
         Goblin(string n,int xr,string ld);
         void attack(Character& target) override;
         void displayStats() override;
+        void useSpecialMove(Character& target) override;
 };
 
 #endif

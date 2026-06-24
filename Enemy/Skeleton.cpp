@@ -20,6 +20,11 @@ void Skeleton::displayStats(){
     Character::displayStats();
 }
 
+void Skeleton::useSpecialMove(Character& target){
+    cout<<"---NO SPECIAL MOVE---"<<endl;
+    attack(target);
+}
+
 void Skeleton::takeDamage(int dmg){
 
     int reduced = dmg - damageReduction;

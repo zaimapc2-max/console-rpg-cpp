@@ -16,6 +16,11 @@ void Warrior::takeDamage(int dmg){
     rage += dmg/2;
 }
 
+void Warrior::useSpecialMove(Character& target){
+    shieldBash(target);
+}
+
+
 void Warrior::attack(Character& target){
    int damage = atkStat + (rage/10);
    cout<< name + " attacks " + target.getname()<<endl;

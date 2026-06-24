@@ -14,6 +14,8 @@ class Enemy:public Character{
         int getxpReward();
         string getlootDrop();
         virtual ~Enemy();
+        virtual void useSpecialMove(Character& target);
+
 
 };
 

@@ -13,6 +13,28 @@ void Mage::displayStats(){
     cout<<"============================="<<endl;
 }
 
+void Mage::useSpecialMove(Character& target) {
+    int choice;
+
+    while (true) {
+        cout << "---Press 1 to activate FireBall---" << endl;
+        cout << "---Press 2 to activate FreezeBall---" << endl;
+        cin >> choice;
+
+        if (choice == 1) {
+            fireball(target);
+            break;
+        }
+        else if (choice == 2) {
+            freezeball(target);
+            break;
+        }
+        else {
+            cout << "Invalid Choice! Please enter 1 or 2." << endl;
+        }
+    }
+}
+
 void Mage::fireball(Character& target){
     if(mana>=20){
         mana -=20;

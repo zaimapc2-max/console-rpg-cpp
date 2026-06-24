@@ -12,6 +12,8 @@ class Dragon : public Enemy{
         void fireBreath(Character& target);
         bool isEnraged();
         void displayStats() override;
+        void useSpecialMove(Character& target);
+
 };
 
 #endif

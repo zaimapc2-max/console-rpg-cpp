@@ -12,6 +12,8 @@ class Warrior : public Character{
         void displayStats() override;
         void takeDamage(int dmg) override;
         void shieldBash(Character& target);
+        void useSpecialMove(Character& target);
+
 };
 
 #endif

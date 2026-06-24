@@ -6,8 +6,18 @@ void CombatEngine::playerTurn(Character& player,Enemy& enemy){
 }
 
 
-void CombatEngine::enemyTurn(Character& player,Enemy& enemy){
-    enemy.attack(player);
+void CombatEngine::enemyTurn(Character& player, Enemy& enemy)
+{
+    int chance = rand() % 100;
+
+    if (chance < 30)      // 30% special attack chance
+    {
+        enemy.useSpecialMove(player);
+    }
+    else
+    {
+        enemy.attack(player);
+    }
 }
 
 void CombatEngine::startBattle(Character& player,Enemy& enemy){

@@ -32,6 +32,23 @@ class Character{
         virtual void takeDamage(int dmg);
         virtual bool isAlive();
         virtual void displayStats();
+        void heal (int amount);
+        void boostAttack(int amount);
+        virtual void useSpecialMove(Character& target);
+
+        
+        void addXp(int amount);
+        void levelUpStats();
+
+        //setters
+        void setHp(int hp);
+        void setMaxHp(int maxHp);
+        void setMana(int mana);
+        void setAttack(int attack);
+        void setDefence(int defence);
+        void setLevel(int level);
+        void setXp(int xp);
+        void setMaxMana(int maxMana);
 
 };
 

@@ -12,6 +12,11 @@ void Archer::displayStats(){
     cout<<"============================="<<endl;
 }
 
+void Archer::useSpecialMove(Character& target){
+    arrowRain(target);
+}
+
+
 void Archer::attack(Character& target){
    cout<< name + " attacks " + target.getname()<<endl;
    int roll = rand() % 100;

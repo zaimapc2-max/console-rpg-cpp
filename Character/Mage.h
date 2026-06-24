@@ -11,6 +11,7 @@ class Mage : public Character{
         void displayStats() override;
         void fireball(Character& target);
         void freezeball(Character& target);
+        void useSpecialMove(Character& target);
 };
 
 

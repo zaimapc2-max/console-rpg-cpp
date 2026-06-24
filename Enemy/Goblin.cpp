@@ -14,6 +14,10 @@ void Goblin::attack(Character& target){
     cout<<target.getname() +" loses "<<atkStat<<" health points"<<endl;
 }
 
+void Goblin::useSpecialMove(Character& target){
+    cout<<"---NO SPECIAL MOVE---"<<endl;
+    attack(target);
+}
 
 void Goblin::displayStats(){
     Character::displayStats();

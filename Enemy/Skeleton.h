@@ -10,6 +10,7 @@ class Skeleton : public Enemy{
         void attack(Character& target) override;
         void displayStats() override;
         void takeDamage(int dmg) override;
+        void useSpecialMove(Character& target) override;
 };
 
 #endif

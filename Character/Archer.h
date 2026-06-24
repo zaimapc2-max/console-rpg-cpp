@@ -11,6 +11,7 @@ class Archer : public Character{
         void attack(Character& target) override;
         void displayStats() override;
         void arrowRain(Character& target);
+        void useSpecialMove(Character& target);
 };
 
 

@@ -35,6 +35,19 @@ void Character:: takeDamage(int dmg){
     }
 }
 
+void Character::heal(int amount){
+    hp = hp + amount;
+    if(hp>maxHp){
+        hp = maxHp;
+    }
+}
+
+void Character::useSpecialMove(Character& target){
+    cout<<"No Special Move Available!!"<<endl;
+}
+
+
+
 int Character::gethp(){ return hp;}
 int Character::getmaxHp(){ return maxHp;}
 int Character::getmana() {return mana;}
@@ -46,3 +59,67 @@ int Character::getxp(){return xp;}
 string Character::getname(){return name;}
 
 Character::~Character(){}
+
+void Character::addXp(int amount)
+{
+    xp += amount;
+}
+
+void Character::levelUpStats()
+{
+    level++;
+
+    atkStat += 5;
+    defence += 3;
+    maxHp += 20;
+
+    hp = maxHp; // fully heal on level up
+}
+
+void Character::setHp(int hp)
+{
+    this->hp = hp;
+}
+
+void Character::setMaxMana(int maxMana)
+{
+    this->maxMana = maxMana;
+}
+
+
+void Character::setMaxHp(int maxHp)
+{
+    this->maxHp = maxHp;
+}
+
+void Character::setMana(int mana)
+{
+    this->mana = mana;
+}
+
+void Character::setAttack(int attack)
+{
+    this->atkStat = attack;
+}
+
+void Character::setDefence(int defence)
+{
+    this->defence = defence;
+}
+
+void Character::setLevel(int level)
+{
+    this->level = level;
+}
+
+void Character::setXp(int xp)
+{
+    this->xp = xp;
+}
+
+void Character::boostAttack(int amount){
+    atkStat = atkStat + amount;
+}
+
+
+

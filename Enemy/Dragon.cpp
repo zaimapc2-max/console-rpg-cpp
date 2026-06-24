@@ -27,6 +27,11 @@ void Dragon::attack(Character& target){
     cout<<target.getname() +" loses "<<damage<<" health points"<<endl;
 }
 
+
+void Dragon::useSpecialMove(Character& target){
+    fireBreath(target);
+}
+
 void Dragon::displayStats(){
     Character::displayStats();
     cout<<"-------Dragon Info--------"<<endl;
